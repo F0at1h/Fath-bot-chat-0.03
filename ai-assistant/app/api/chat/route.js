@@ -23,7 +23,7 @@ export async function POST(req) {
         Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "google/gemini-flash-1.5:free",
+        model: "openrouter/free",
         messages: formattedMessages,
       }),
     });
